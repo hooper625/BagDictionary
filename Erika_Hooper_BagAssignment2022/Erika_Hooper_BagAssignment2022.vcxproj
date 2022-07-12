@@ -129,6 +129,14 @@
   <ItemGroup>
     <ClCompile Include="Erika_Hooper_BagAssignment2022.cpp" />
   </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ABag.h" />
+    <ClInclude Include="bagADT.h" />
+    <ClInclude Include="BDictionary.h" />
+    <ClInclude Include="book.h" />
+    <ClInclude Include="dictionaryADT.h" />
+    <ClInclude Include="kvpair.h" />
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>

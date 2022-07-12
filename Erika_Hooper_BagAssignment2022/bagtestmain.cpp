@@ -1,10 +1,9 @@
-// Erika_Hooper_BagAssignment2022.cpp : This file contains the 'main' function. Program execution begins and ends there.
 /*
 * File:   bagtestmain.cpp
 * Author: Prof Sipantzi -- CSIS 215 -- Programming Assignment 1 -- Bag Dictionary
+*
 * Created on July 14, 2012, 11:45 AM
 * Updated pointers to smart pointers in ABag and BDictionary on 12/14/2018
-* Updated bag ADT to implement the dictonary ADT
 */
 
 #include <string>
@@ -23,7 +22,7 @@ void PauseScreen(); //Used to pause screen output
 */
 int main(int argc, char** argv) {
 
-	cout << "Erika Hooper -- CSIS 215 Programming Assignment 1 -- Bag Dictionary" << endl << endl;
+	cout << "<Student Name> -- CSIS 215 Programming Assignment 1 -- Bag Dictionary" << endl << endl;
 
 	BDictionary<int, string> myIntStrDict(DICTIONARY_SIZE);
 	BDictionary<string, int> myStrIntDict(DICTIONARY_SIZE);
@@ -33,9 +32,8 @@ int main(int argc, char** argv) {
 	cout << "Testing dictionary with <int, string> KV Pair\n";
 	for (int i = 1; i <= DICTIONARY_SIZE; i++) {
 		stringstream sn;
-		i = (i * 10);
-		sn << "Beth " << i;
-		myStrIntDict.insert(sn.str(), i);
+		sn << "Beth " << i * 10;
+		myIntStrDict.insert(i * 10, sn.str());
 	}
 	cout << "INSERT: Size of myIntStrDict is " << myIntStrDict.size() << endl;
 
@@ -125,20 +123,11 @@ int main(int argc, char** argv) {
 
 	/* end myStrIntDict tests ---------------------------------------------*/
 
-	/* Demonstrate any Bag functions that were not used/demonstrated in the implemention
+	/* Demonstrate any Bag functions that were not used/demonstrated in the implemention 
 	of your BDictionary and ABag using a Bag of KVpairs<int, string>. */
 
 	ABag<KVpair<int, string>> myBag; //Used to test bag functions not previously demonstrated
-	//
-										 
-	//testing bag capacity
-	cout<<endl<< "BAG CAPACITY TEST: " << myBag.bagCapacity() << endl;
-	cout << endl << "Size before adding elements:" << myBag.size() << endl;
-	
-	//testing +-operator
-	KVpair<int, string> Name(10, "Hello");
-	myBag += Name;
-	cout << endl << "Size after adding elements:" << myBag.size() << endl;
+
 	PauseScreen();
 
 	return 0;

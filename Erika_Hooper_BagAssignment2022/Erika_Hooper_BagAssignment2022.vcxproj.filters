@@ -19,4 +19,24 @@
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ABag.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="bagADT.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="BDictionary.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="book.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dictionaryADT.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="kvpair.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
 </Project>
